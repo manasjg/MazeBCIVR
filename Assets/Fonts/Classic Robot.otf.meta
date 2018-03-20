@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3ffa1617ca51f3642a0ae930f7de2bef
+timeCreated: 1519300006
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 50
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Classic Robot
+  fontNames:
+  - Classic Robot
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
