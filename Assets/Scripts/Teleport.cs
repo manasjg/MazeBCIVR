@@ -41,7 +41,23 @@ public class Teleport : MonoBehaviour
             portal_Y1.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
             {
-                transform.position = new Vector3(-3.5f, 0.49f, 3.89f);
+                GameObject GO = GameObject.FindGameObjectWithTag("Yellow_2");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
             }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
@@ -52,7 +68,23 @@ public class Teleport : MonoBehaviour
             portal_Y2.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
             {
-                transform.position = new Vector3(4.21f, 0.49f, 3.91f);
+                GameObject GO = GameObject.FindGameObjectWithTag("Yellow_1");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
             }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
@@ -62,8 +94,25 @@ public class Teleport : MonoBehaviour
         {
             portal_Or1.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(10.48f, 0.49f, 1.45f);
-
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Orange_2");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }
 
@@ -72,7 +121,24 @@ public class Teleport : MonoBehaviour
             portal_Or2.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
             {
-                transform.position = new Vector3(0.78f, 0.49f, 1.87f);
+                GameObject GO = GameObject.FindGameObjectWithTag("Orange_1");
+
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
                 //StopPortal();
             }
 
@@ -83,7 +149,25 @@ public class Teleport : MonoBehaviour
         {
             portal_R1.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(8.44f, 0.49f, -7.24f);
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Red_2");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }
@@ -92,7 +176,25 @@ public class Teleport : MonoBehaviour
         {
             portal_R2.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(-3.45f, 0.49f, -3f);
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Red_1");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }
@@ -101,7 +203,25 @@ public class Teleport : MonoBehaviour
         {
             portal_B1.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(-5.95f, 0.49f, -3.19f);
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Blue_2");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }
@@ -110,7 +230,25 @@ public class Teleport : MonoBehaviour
         {
             portal_B2.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(-6.03f, 0.49f, -5.4f);
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Blue_1");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }
@@ -119,16 +257,54 @@ public class Teleport : MonoBehaviour
         {
             portal_G1.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(-3.65f, 0.49f, -7.48f);
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Green_2");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }
 
         if (other.gameObject.tag == "Green_2")
         {
+
+           
             portal_G2.gameObject.SetActive(true);
             if (other.gameObject.transform.Find("Slider").GetComponent<Slider>().value == other.gameObject.transform.Find("Slider").GetComponent<Slider>().maxValue)
-                transform.position = new Vector3(1.65f, 0.49f, -7.25f);
+            {
+                GameObject GO = GameObject.FindGameObjectWithTag("Green_1");
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 1)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x - 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 2)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x + 1.0f, 0.49f, GO.transform.parent.gameObject.transform.position.z);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 3)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z - 1.0f);
+                }
+                if (GO.transform.parent.gameObject.GetComponent<PortalDirectionIdentifier>().direction == 4)
+                {
+                    transform.position = new Vector3(GO.transform.parent.gameObject.transform.position.x, 0.49f, GO.transform.parent.gameObject.transform.position.z + 1.0f);
+                }
+            }
 
             other.gameObject.transform.Find("Slider").GetComponent<Slider>().value = 0;
         }

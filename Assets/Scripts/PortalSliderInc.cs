@@ -13,7 +13,7 @@ public class PortalSliderInc : MonoBehaviour {
     void Start () {
        
         ps = transform.Find("Portal/Circle (1)").gameObject.GetComponent<ParticleSystem>();
-        Debug.Log(ps);
+        
         Go = GameObject.FindGameObjectWithTag("Connector");
     }
 
